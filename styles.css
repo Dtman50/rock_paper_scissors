@@ -1,0 +1,135 @@
+/*Body Styles*/
+
+body {
+    background-image: url(jigsaw-saw.gif); 
+    background-size: cover;
+    font-family: 'Creepster', cursive, sans-serif;
+    font-size: 48pt;
+    text-align: center;
+}
+
+/* Header styles*/
+
+p {
+    color: red;
+}
+
+h3 {
+    color: red;
+    font-size: 20pt;
+}
+
+/* RPS Button Styles*/
+
+#buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.playBtn {
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 500ms;
+    width: 200px;
+    height: 200px;
+}
+
+.playBtn:hover {
+    transform: scale(1.2);
+}
+
+#buttons div {
+    color: red;
+}
+
+.sign {
+   font-size: 100px;
+}
+
+/* Start Over Button styles*/
+
+#restart {
+    width: 200px;
+    height: 200px;
+}
+
+#restart .sign {
+    font-size: 32px;
+}
+
+/*Scores Styles*/
+
+.score-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    padding-top: 40px;
+    border-bottom: 2px solid seashell;
+}
+
+#score {
+    color: red;
+    margin-left: .1rem;
+    font-size: 3rem;
+}
+
+#player-score {
+    color: red;
+}
+
+#tied-score {
+    color: white;
+}
+
+#computer-score {
+    color: red;
+}
+
+/* Signs above selection Styles*/ 
+
+.sign-container {
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    padding-bottom: 15px;
+}
+
+/* Mobile Capabilities */
+
+@media (max-width: 550px) {
+
+    #score-info {
+      font-size: 26pt;
+    }
+
+    h3 {
+        font-size: 13pt;
+    }
+  
+    #buttons {
+        align-items: center;
+        gap: 10px;
+    }
+
+    #restart .sign {
+        font-size: 15pt;
+    }
+    
+    .playBtn {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .sign {
+      font-size: 50px;
+    }
+  
+    .score-container {
+      font-size: 18pt;
+    }
+}

@@ -4,9 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
 </head>
 <body>
-    <script type="text/javascript" src="script.js"></script>
+    <p id="score-info">
+        Wanna Play A Game? <br>
+        <h3>First to 5 games.</h3>
+    </p>
+
+    <div class="sign-container">
+        <div class="sign" id="playerSign">❌</div>
+        <div class="sign" id="computerSign">❌</div>
+    </div>
+
+    <div id="buttons">
+        <button class= "playBtn" data-selection="rock" id="rock">
+            <div class="sign">✊</div>
+        </button>
+        <button class= "playBtn" data-selection="paper" id="paper">
+            <div class="sign">🖑</div>
+        </button>
+        <button class= "playBtn" data-selection="scissors" id="scissors"> 
+            <div class="sign">✌</div>
+        </button>
+        <button class= "playBtn" id="restart">
+            <div class="sign">Start Over</div>
+        </button>
+    </div>
+    
+    <div class="score-container">
+        <div id="player-score">
+            Player:
+            <span id="score">0</span>
+        </div>
+        <div id="tied-score"> 
+            Tied:
+            <span id="score">0</span>
+        </div>
+        <div id="computer-score">
+            Computer:
+            <span id="score">0</span>
+        </div>
+        <!--<div class="sign-winner">🖑</div>
+        <div class="tied">🖑</div>
+        <div class="sign-select">🖑</div> -->
+
+    </div>
+    <script type="text/javascript" src="script.js" defer></script>
+    
 </body>
 </html>
